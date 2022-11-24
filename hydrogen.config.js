@@ -2,8 +2,8 @@ import {defineConfig} from '@shopify/hydrogen/config';
 
 export default defineConfig({
   shopify: {
-    storeDomain: 'hydrogen-storefront-app.myshopify.com',
-    storefrontToken: 'af9de22478e0d9f8ddcde1e947a89794',
+    storeDomain: 'farhan-it-online-new.myshopify.com',
+    storefrontToken: '4db8b5c23e7179259c941fc546ec9563',
     storefrontApiVersion: '2022-07',
   },
 });
