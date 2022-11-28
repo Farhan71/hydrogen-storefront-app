@@ -1,6 +1,7 @@
 import { useUrl, Link, useCart } from "@shopify/hydrogen";
 import { Drawer, useDrawer } from "./Drawer.client";
 import { CartDetails } from "./CartDetails.client";
+import styles from "./header.module.css";
 
 export default function Header({ shop }) {
   const { pathname } = useUrl();
@@ -24,8 +25,8 @@ export default function Header({ shop }) {
         }`}
       >
         <div className="flex gap-12">
-          <Link className="font-bold" to="/">
-            {shop.name}
+          <Link className= {` font-bold ${styles.wrapper}` } to="/">
+             {shop.name}
           </Link>
         </div>
 

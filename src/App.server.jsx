@@ -6,6 +6,7 @@ import {
   CartProvider,
 } from "@shopify/hydrogen";
 import { Suspense } from "react";
+import "./my-style.css";
 
 function App({ routes }) {
   return (

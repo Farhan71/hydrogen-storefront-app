@@ -1,6 +1,8 @@
 import FeaturedCollections from "../components/FeaturedCollections.server";
 import { Layout } from "../components/Layout.server";
 import { Suspense } from "react";
+import { Link, Image, gql, useShopQuery, CacheLong } from "@shopify/hydrogen";
+import styles from './index.module.css';
 
 export default function Home() {
   return (
@@ -15,6 +17,10 @@ export default function Home() {
           Shopify custom storefronts.
         </p>
       </div>
+      <Link className={ styles.wrapper } to={`/my-route/new-page`} >
+        Click Here
+      </Link>
+      {console.log(styles)}
       <Suspense>
         <FeaturedCollections />
       </Suspense>
